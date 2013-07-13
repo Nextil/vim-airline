@@ -20,10 +20,10 @@ let s:cyan    = {'t': 37,  'g': '#2aa198'}
 let s:green   = {'t': 64,  'g': '#859900'}
 
 " Get background color
-if index([string(s:base03.t), s:base03.g], synIDattr(synIDtrans(hlID('Normal')), 'bg')) > -1
-    let s:background = 'dark'
-else
+if index([string(s:base3.t), s:base3.g], synIDattr(synIDtrans(hlID('Normal')), 'bg')) > -1
     let s:background = 'light'
+else
+    let s:background = 'dark'
 end
 
 """"""""""""""""""""""""""""""""""""""""""""""""
